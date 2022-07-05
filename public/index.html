@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+     crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>find A Job In South Africa</title>
+</head>
+<body>
+    <section class="register reg inforpage">
+        <div class="center">
+            <h1>please register here</h1>
+        <div class="page">
+            <form id="form">
+                
+                <label for="username">username</label>
+                <input type="text" id="username" placeholder="name">
+               
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="email@gamil.com">
+               
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="enter password">
+               
+                <label for="role">role</label>
+                <select name="roles" id="roles" placeholder="roles">
+                    <option value="employee">employee</option>
+                    <option value="employer">employer</option>
+                </select>
+
+                <button type="submit">send</button>
+                
+            </form>
+        </div>
+
+        <p>already have an <a class="tolog" href="#">account</a></p>
+
+        </div>
+        
+
+    </section>
+
+    <section  class="login log inforpage">
+        <div class="center">
+            <h1>please login here</h1>
+        <div class="page">
+            <form id="form2">
+
+                <label for="email2">email</label>
+                <input type="email" id="email2" placeholder="email@gamil.com">
+               
+                <label for="password2">password</label>
+                <input type="password" id="password2" placeholder="enter password">
+                <button type="submit">send</button>
+
+            </form>
+        </div>
+
+        <p>please create an <a class="toreg" href="#">account</a></p>
+       
+        </div>
+        
+        
+    </section>
+
+    <section class="home">
+        <div class="gridmine">
+            <!-- <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div>
+
+            </div>
+            <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div>
+
+            </div>
+            <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div>
+
+            </div>
+            <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div>
+
+            </div>
+            <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div>
+
+            </div>
+            <div class="job">
+                <h1 class="positions">Telemarketer</h1>
+                <h2 class="company">inter plus</h2>
+                <h2 class="user">durban, kwa-zulu-natal, south Africa</h2>
+                <div>
+                    <p class="prices">R88933 a month</p>
+                    <p class="timePeriod">full-time</p>
+                </div>
+                
+                <div class="status">looking</div> -->
+
+            </div>
+        </div>
+    </section>
+     
+    <div class="adminemployer12">
+    <section class="adminemployer">
+        <div class="adminsec">
+            <div class="gridlo">
+                <img id="editboard" src="./imagesicons/1000_F_222701333_QEsWji98DlfuvdBvWOuh6YSsJiQzj9K0.jpg">
+                <img id="showboard" src="./imagesicons/images.png">
+            </div>
+        </div>
+        
+        <div class="jobedit">
+            <div class="sendtoback">
+             <p>looking to hire a:  <span ><input id="positionedit" type="text"></span></p>
+             <p>company name:  <span ><input id="companyedit" type="text"></span></p>
+             <p>employee must be from: </p>
+             <select name="place" id="area">
+                 <option value="remote">remote</option>
+                 <option value="south africa">south africa</option>
+                 <option value="russia">russia</option>
+                 <option value="china">china</option>
+                 <option value="india">india</option>
+                 <option value="brezial">brezial</option>
+             </select>
+             <select name="provice" id="area2">
+                <option value="remote">remote</option>
+                 <option value="kwa-zulu-natal">kwa-zulu-natal</option>
+                 <option value="western cape">western cape</option>
+                 <option value="eastern cape">eastern cape</option>
+                 <option value="pretoria">pretoria</option>
+                 <option value="free state">free state</option>
+                 <option value="northern cape">northern cape</option>
+             </select>
+             <select name="cities" id="area3">
+                <option value="remote">remote</option>
+                 <option value="durban">durban</option>
+                 <option value="pietermaritzburg">pietermaritzburg</option>
+                 <option value="new castle">new castle</option>
+                 <option value="pretoria">scottburgh</option>
+                 <option value="free state">richards bay</option>
+                 <option value="northern cape">empangeni</option>
+             </select>
+             <p>month pay <span ><input id="montlypay" type="text"></span></p>
+             <p>timePeriod: </p>
+             <select name="period" id="period">
+                 <option value="fulltime">Full-time</option>
+                 <option value="Temporary">Temporary</option>
+             </select>
+             
+             <h2>please add more information</h2>
+
+             <div class="description" id="description" contenteditable="true"></div>
+             
+             <button type="submit" class="sendnodes btn1">submit</button>
+            </div>
+            <div class="jobshow">
+                <div class="job">
+                    <h1 class="positions" id="positions">Telemarketer</h1>
+                    <h2 class="company" id="company">inter plus</h2>
+                    <h2 class="user" id="location"><span id="location1"></span>, <span id="location2"></span>, <span id="location3"></span></h2>
+                    <div>
+                        <p class="prices" id="prices">R88933 a month</p>
+                        <p class="timePeriod" id="timePeriod">full-time</p>
+                    </div>
+
+                    
+                    
+                    <div class="status" id="status">looking</div>
+    
+                </div>
+                
+                <button type="submit" class="sendnodes btn2">submit</button>
+
+                <div class="descriptionpp" id="descriptionpp">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/second.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+// html,body{
+//     height: 100%;
+// }
+
+// body{
+//     background-color: aqua;
+// }
+
+input{
+    text-transform: none;
+}
+
+.inforpage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.inforpage .center{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+ 
+}
+
+.inforpage h1{
+
+    text-shadow: 5px 5px 2px rgb(93, 95, 95);
+}
+
+.inforpage p{
+
+    text-shadow: 5px 5px 2px rgb(93, 95, 95);
+}
+
+.inforpage .page{
+    width: 50%;
+    box-shadow: 1px 1px 20px  rgb(172, 172, 172);
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.inforpage .page form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:auto auto;
+    padding: 0 10px;
+}
+
+.inforpage .page form input{
+   margin-bottom: 10px;
+   width: min(100%);
+}
+
+.inforpage .page form button{
+   margin-top: 10px;
+   width: min(100%);
+   border: none;
+   background-color: tomato;
+}
+
+.inforpage .page form select option{
+   width: min(100%);
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    // overflow: hidden;
+   
+}
+
+.gridmine{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.job{
+    
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px black;
+
+}
+
+.job>*{
+    margin-left: 10px;
+
+}
+
+.job .positions{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.job h2{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgb(28, 28, 28);
+}
+
+.job div p{
+    font-size: 0.9em;
+    font-weight: 650;
+    color: rgb(63, 63, 63);
+    background-color: rgb(100, 100, 100);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.job div{
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.job div>*:nth-child(2){
+    margin-right: 44px;
+
+}
+
+.job .status{
+    font-size: 0.6em;
+    padding-bottom: 20px;
+    
+}
+
+// //////// //// //// / / // / //
+
+.adminemployer{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+
+.adminemployer>*:nth-child(1){
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.adminsec{
+    width: 100%;
+    align-self: end;
+    position: fixed;
+}
+
+.adminsec .gridlo img{
+    width:40px;
+    // width:70px;
+}
+
+.adminsec .gridlo>*:nth-child(1){
+    
+    justify-self: center;
+    background-color: rgb(88, 202, 139);
+    
+}
+.adminsec .gridlo>*:nth-child(1):active{
+    width:20px;
+    align-self: center;
+    
+}
+
+.adminsec .gridlo>*:nth-child(2){
+    border: 1px solid brown;
+    justify-self: center;
+    background-color: rgb(88, 202, 139);
+    
+}
+
+.adminsec .gridlo>*:nth-child(2):active{
+    width:20px;
+    align-self: center;
+    
+}
+
+.adminsec .gridlo{
+    width: 100%;
+    background-color: rgb(88, 88, 202);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.jobedit{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.sendtoback{
+    width: 100%;
+    height: 100%;
+    // background-color: greenyellow;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.description{
+    width: 95%;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+.description:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.sendtoback p span{
+    width: 30px;
+    border-bottom: 1px solid grey;
+    
+    margin-left: 10px;
+}
+
+.sendtoback p span :hover{
+    background-color: rgb(153, 153, 153);
+    color: rgb(21, 255, 0);
+}
+
+.sendtoback>*{
+    // background-color: tomato;
+    margin-bottom: 10px;
+}
+
+.sendnodes{
+    width: 200px;
+    background-color: tomato;
+    margin-top: 10px;
+    margin-left: 23%;
+    border: none;
+}
+
+.descriptionpp{
+    text-align: justify;
+}
+
+.description{
+    text-align: justify;
+}
+
+
+
+
+
+
+
