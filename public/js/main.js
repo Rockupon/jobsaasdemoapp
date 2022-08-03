@@ -95,7 +95,7 @@ btn1.addEventListener('click',(e)=>{
     const a3v = area3.value
     const mpv = montlypay.value;
     const pv = period.value;
-    const dv = description.textContent;
+    const dv = description.innerHTML;
 
     //////// ////////
 
@@ -106,7 +106,7 @@ btn1.addEventListener('click',(e)=>{
     location3.innerText = a3v;
     prices.innerText = mpv;
     timePeriod.innerText = pv;
-    descriptionpp.innerText = dv;
+    descriptionpp.innerHTML = dv;
     
 })
 
