@@ -37,7 +37,9 @@ const status = document.querySelector('#status');
 
 const btn1 = document.querySelector('.btn1');
 const btn2 = document.querySelector('.btn2');
+Const justDisplay = document.querySelector('.justDisplay');
 
+JustDisplay.style.display = 'none'
 login.style.display = 'none'
 home.style.display = 'none'
 jobshow.style.display = 'none'
