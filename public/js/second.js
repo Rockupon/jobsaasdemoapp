@@ -233,9 +233,8 @@ const getSingleItem = async (e)=>{
            <button type="submit">apply now</button>
         </div>
        
-      </div>`
-    })
-    .than(()=>{
+      </div>`;
+
      fullItemInfor.querySelector('button').addEventListener('click',(e)=>{
                e.preventDefault()
                home.style.display = 'block';
