@@ -150,6 +150,7 @@ const loadJobs = async (e)=>{
                 dataAttributes = e.currentTarget.getAttribute('data-itemId');
                 home.style.display = 'none';
                 fullItemInfor.style.display = 'block';
+                getSingleItem();
            })
            })
         })
@@ -186,6 +187,60 @@ const sendjobtobackend = async (e)=>{
         console.log(`sorry bro your machine is shit_ ${error}`);
     }
 }
+
+const getSingleItem = async (e)=>{
+  try {
+    await axios.get(jobsUrl, params: {
+    ID: dataAttributes
+  },)
+    .then((res)=>{
+     
+      fullItemInfor.innerHTML = ` <div class="jobHeader">
+        <br />
+        <p class="jT">${res.data.job.position}</p>
+        <p class="cT">${res.data.job.company}</p>
+        <p>location</p>
+        <br />
+        <p class="jD"><b>job details</b></p>
+        <br />
+        <p><b>time bases</b></p>
+        <li class="grey">${res.data.job.timePeriod}</li>
+        <br />
+        <br />
+      </div>
+      <div class="jobTextDetail">
+        <br />
+        <p class="fJD">full job description </p>
+        <div>
+          ${res.data.job.description}
+        </div>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="jobPostInfor">
+        <p class="hI">Hiring Insights</p>
+        <li class="grey">Hiring 1 candidate for this role</li>
+        <p><b>job activity</b></p>
+        <li class="grey">${res.data.job.status}</li>
+        
+        <li class="grey">job posted: <i>30+ days ago</i></li>
+        <li class="grey">job boost level: <i>30lv+</i></li>
+        <br />
+      </div>
+      <div class="jobApplyBtn">
+        <div>
+           <button type="submit">apply now</button>
+        </div>
+       
+      </div>`
+    })
+    .than(()=>{
+     fullItemInfor.querySelector('button').addEventListener('click',()=>{
+        home.style.display = 'block';
+               fullItemInfor.style.display = 'none;
+      })
+    })
 
 btn2.addEventListener('click',(e)=>{
     sendjobtobackend();
