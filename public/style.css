@@ -247,4 +247,118 @@ input {
 .description {
   text-align: justify;
 }
+.fullJobDescription{
+  width: 100%;
+  /*height: 100vh;*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: red;
+}
+
+.jobHeader{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+.jobHeader>*{
+  width: 90%;
+  margin:0 auto;
+  padding-top: 13px;
+  background-color: white;
+}
+
+.fullJobDescription>*>*{
+  font-size: 15px;
+  color: #1f1f1f;
+}
+
+.jobHeader .jT{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.jobHeader .cT{
+  color: #757675;
+}
+
+.jobHeader .jD{
+  font-size: 16px;
+  
+}
+
+.jobTextDetail{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  
+}
+
+.jobTextDetail>*{
+  width: 90%;
+  margin:0 auto;
+  padding-top: 13px;
+  background-color: white;
+}
+
+.jobTextDetail .fJD{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.jobPostInfor{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid blue;
+}
+
+.jobPostInfor>*{
+  width: 90%;
+  margin:0 auto;
+  padding-top: 13px;
+  background-color: white;
+}
+
+.jobPostInfor .hI{
+  font-size: 16px;
+  font-weight: bold
+}
+
+.jobPostInfor .grey{
+  list-style-type: square;
+  padding-left: 7px;
+  color: rgb(50,50,50);
+}
+
+.jobPostInfor .grey i{
+  color: rgb(0,250,0);
+}
+
+.jobApplyBtn{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid blue;
+}
+
+.jobApplyBtn div{
+  width: 90%;
+  margin:0 auto;
+  padding-top: 13px;
+  background-color: white;
+  padding-bottom: 22px;
+}
+
+.jobApplyBtn div button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: blue;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
