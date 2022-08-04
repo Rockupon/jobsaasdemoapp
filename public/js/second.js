@@ -1,4 +1,5 @@
-
+const fullItemInfor = document.querySelector('.fullJobDescription');
+var dataAttributes;
 
 const form = document.querySelector('#form');
 const name = document.querySelector('#username');
@@ -142,6 +143,15 @@ const loadJobs = async (e)=>{
                 home.style.display = 'none'
                 document.querySelector('.adminemployer12').style.display = 'block'
             });
+
+          var jobPosts = gridmine.querySelectorAll('.job');
+           jobPosts.forEach((jobz)=>{
+              jobz.addEventListener('click',(e)=>{
+                dataAttributes = e.currentTarget.getAttribute('data-itemId');
+                home.style.display = 'none';
+                fullItemInfor.style.display = 'block';
+           })
+           })
         })
         .catch((err)=>{
             console.log(err.response)
