@@ -150,7 +150,7 @@ const loadJobs = async (e)=>{
                 dataAttributes = e.currentTarget.getAttribute('data-itemId');
                 home.style.display = 'none';
                 fullItemInfor.style.display = 'block';
-                getSingleItem();
+                
            })
            })
         })
