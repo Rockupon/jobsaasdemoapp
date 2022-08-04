@@ -242,6 +242,10 @@ const getSingleItem = async (e)=>{
                fullItemInfor.style.display = 'none;
       })
     })
+  } catch (error) {
+    console.log("there is a err of: "+error)
+  }
+}
 
 btn2.addEventListener('click',(e)=>{
     sendjobtobackend();
