@@ -258,7 +258,7 @@ const getSingleItem = async (e)=>{
      fullItemInfor.querySelector('button').addEventListener('click',(e)=>{
                e.preventDefault()
                home.style.display = 'block';
-               fullItemInfor.style.display = 'none;
+               fullItemInfor.style.display = 'none';
       })
     })
     .catch((err)=>{
