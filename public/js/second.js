@@ -195,7 +195,8 @@ const getSingleItem = async (e)=>{
     })
     .then((res)=>{
      
-      fullItemInfor.innerHTML = ` <div class="jobHeader">
+      fullItemInfor.innerHTML = ` 
+        <div class="jobHeader">
         <br />
         <p class="jT">${res.data.job.position}</p>
         <p class="cT">${res.data.job.company}</p>
@@ -233,7 +234,8 @@ const getSingleItem = async (e)=>{
            <button type="submit">apply now</button>
         </div>
        
-      </div>`;
+      </div>
+       `
 
      fullItemInfor.querySelector('button').addEventListener('click',(e)=>{
                e.preventDefault()
