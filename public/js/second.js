@@ -190,9 +190,9 @@ const sendjobtobackend = async (e)=>{
 
 const getSingleItem = async (e)=>{
   try {
-    await axios.get(jobsUrl, params: {
+    await axios.get(jobsUrl, params:{
     ID: dataAttributes
-  },)
+  })
     .then((res)=>{
      
       fullItemInfor.innerHTML = ` <div class="jobHeader">
