@@ -45,6 +45,7 @@ const loginUrl = '/regster/login';
 const logoutUrl = '/regster/logout';
 const jobsUrl = '/thejobs';
 
+
 ////////// axios urls /////////
 
 function sendtolog(){
@@ -208,7 +209,9 @@ const getOnlyOneItems = async (e)=>{
 
 const getSingleItem = async (e)=>{
   try {
-    await axios.get(jobsUrl)
+    Var id = dataAttributes;
+    const jobUrl = `/thejobs/${id}`;
+    await axios.get(jobUrl)
     .then((res)=> {
       
       fullItemInfor.innerHTML = ` 
