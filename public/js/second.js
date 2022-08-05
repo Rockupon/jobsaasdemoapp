@@ -188,6 +188,24 @@ const sendjobtobackend = async (e)=>{
     }
 }
 
+const getOnlyOneItems = async (e)=>{
+    e.preventDefault();
+   
+    try {
+        await axios.get(jobsUrl)
+        .then((res)=>{
+            console.log(res)
+          
+        })
+        .catch((err)=>{
+            console.log(err.response)
+        })
+
+    } catch (error) {
+        console.log(`sorry bro your machine is shit_ ${error}`);
+    }
+}
+
 const getSingleItem = async (e)=>{
   try {
     await axios.get(jobsUrl,params:{
@@ -249,6 +267,24 @@ const getSingleItem = async (e)=>{
   } catch (error) {
     console.log("there is a err of: "+error)
   }
+}
+
+const getOnlyOneItem = async (e)=>{
+    e.preventDefault();
+   
+    try {
+        await axios.get(jobsUrl)
+        .then((res)=>{
+            console.log(res)
+          
+        })
+        .catch((err)=>{
+            console.log(err.response)
+        })
+
+    } catch (error) {
+        console.log(`sorry bro your machine is shit_ ${error}`);
+    }
 }
 
 btn2.addEventListener('click',(e)=>{
