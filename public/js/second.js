@@ -121,7 +121,7 @@ const loadJobs = async (e)=>{
             const jobs = res.data.jobs;
 
             const newJob = jobs.map((job)=>{
-                return  ` <div data-itemId=`${job._id} class="job">
+                return  ` <div data-itemId="${job._id}" class="job">
                 <h1 class="positions">${job.position}</h1>
                 <h2 class="company">${job.company}</h2>
                 <h2 class="user">${job.city}, ${job.provices}, ${job.country}</h2>
