@@ -193,8 +193,8 @@ const getSingleItem = async (e)=>{
     await axios.get(jobsUrl,params:{
     _id: dataAttributes,
     })
-    .then((res)=>{
-     
+    .then((res)=> {
+      
       fullItemInfor.innerHTML = ` 
         <div class="jobHeader">
         <br />
