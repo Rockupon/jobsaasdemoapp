@@ -5,7 +5,7 @@ const register = document.querySelector('.reg');
 const login = document.querySelector('.log');
 const home = document.querySelector('.home');
 
-document.querySelector('.adminemployer12').style.display ='none';
+
 ///////////////////
 const sendtoback = document.querySelector('.sendtoback');
 const positionedit = document.querySelector('#positionedit');
