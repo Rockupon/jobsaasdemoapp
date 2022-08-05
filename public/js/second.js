@@ -262,7 +262,7 @@ const getSingleItem = async (e)=>{
       })
     })
     .catch((err)=>{
-     Console.log(err)
+     console.log(err)
     })
   } catch (error) {
     console.log("there is a err of: "+error)
