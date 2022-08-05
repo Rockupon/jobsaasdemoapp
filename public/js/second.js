@@ -209,8 +209,9 @@ const getOnlyOneItems = async (e)=>{
 
 const getSingleItem = async (e)=>{
   try {
-    
-    await axios.get(jobsUrl)
+    var id = dataAttributes;
+    var jobone = `/thejobs/${id}`;
+    await axios.get(jobone)
     .then((res)=> {
       
       fullItemInfor.innerHTML = ` 
